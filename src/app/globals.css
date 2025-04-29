@@ -37,7 +37,7 @@
 
 /* Gradient Effects */
 .gradient-text {
-  @apply bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-400 animate-gradient;
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-[#F2A900] to-[#D99000] animate-gradient;
 }
 
 .hover-gradient-effect {
@@ -53,7 +53,7 @@
   inset: 0;
   background: radial-gradient(
     800px circle at var(--mouse-x, 0) var(--mouse-y, 0),
-    rgba(255, 255, 255, 0.15),
+    rgba(242, 169, 0, 0.15),
     transparent 40%
   );
   opacity: 0;
@@ -69,7 +69,7 @@
 /* Scrollbar Styling */
 * {
   scrollbar-width: thin;
-  scrollbar-color: rgba(255, 255, 255, 0.3) rgba(17, 17, 17, 0.3);
+  scrollbar-color: rgba(242, 169, 0, 0.3) rgba(17, 17, 17, 0.3);
 }
 
 ::-webkit-scrollbar {
@@ -83,19 +83,19 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(242, 169, 0, 0.3);
   border-radius: 3px;
   transition: background-color 0.2s;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(242, 169, 0, 0.5);
 }
 
 /* Custom Scrolling Areas */
 .custom-scrollbar {
   scrollbar-width: thin;
-  scrollbar-color: rgba(255, 255, 255, 0.3) transparent;
+  scrollbar-color: rgba(242, 169, 0, 0.3) transparent;
 }
 
 .custom-scrollbar::-webkit-scrollbar {
@@ -107,12 +107,12 @@
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(242, 169, 0, 0.3);
   border-radius: 3px;
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb:hover {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(242, 169, 0, 0.5);
 }
 
 /* Animations */
@@ -131,21 +131,21 @@
   animation: gradient 8s linear infinite;
 }
 
-/* White Glow Effects */
-.white-glow {
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+/* Rootstock Orange Glow Effects */
+.orange-glow {
+  box-shadow: 0 0 15px rgba(242, 169, 0, 0.5);
 }
 
-.white-glow-text {
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+.orange-glow-text {
+  text-shadow: 0 0 10px rgba(242, 169, 0, 0.7);
 }
 
-.white-glow-hover {
+.orange-glow-hover {
   transition: box-shadow 0.3s ease;
 }
 
-.white-glow-hover:hover {
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+.orange-glow-hover:hover {
+  box-shadow: 0 0 20px rgba(242, 169, 0, 0.6);
 }
 
 /* Code Editor Styling */
@@ -155,16 +155,16 @@
 }
 
 .code-editor::selection {
-  @apply bg-white/20;
+  @apply bg-[#F2A900]/20;
 }
 
-/* White Accents */
-.white-gradient-bg {
-  background: linear-gradient(135deg, #424242 0%, #FFFFFF 50%, #E4E4E4 100%);
+/* Rootstock Orange Accents */
+.orange-gradient-bg {
+  background: linear-gradient(135deg, #C28300 0%, #F2A900 50%, #FFB91A 100%);
 }
 
-.white-gradient-border {
-  border-image: linear-gradient(to right, #FFFFFF, #BDBDBD) 1;
+.orange-gradient-border {
+  border-image: linear-gradient(to right, #F2A900, #D99000) 1;
 }
 
 /* Underline animation for navbar links */
@@ -179,7 +179,7 @@
   left: 0;
   width: 100%;
   height: 2px;
-  background: linear-gradient(90deg, #FFFFFF, #E4E4E4);
+  background: linear-gradient(90deg, #F2A900, #D99000);
   transform: scaleX(0);
   transform-origin: right;
   transition: transform 0.3s ease-in-out;
@@ -193,7 +193,7 @@
 /* Glowing effect for active links */
 .nav-active {
   position: relative;
-  color: #FFFFFF;
+  color: #F2A900;
 }
 
 .nav-active::before {
@@ -203,8 +203,8 @@
   left: 0;
   width: 100%;
   height: 2px;
-  background: linear-gradient(90deg, #FFFFFF, #E4E4E4);
-  box-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+  background: linear-gradient(90deg, #F2A900, #D99000);
+  box-shadow: 0 0 8px rgba(242, 169, 0, 0.6);
 }
 
 /* Mobile nav transition effects */
@@ -258,23 +258,6 @@
   -webkit-backdrop-filter: blur(12px);
 }
 
-/* Replace blue-glow with white-glow */
-.white-glow {
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
-}
-
-.white-glow-text {
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
-}
-
-.white-glow-hover {
-  transition: box-shadow 0.3s ease;
-}
-
-.white-glow-hover:hover {
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
-}
-
 .gradient-border {
   position: relative;
   border-radius: 0.5rem;
@@ -287,7 +270,7 @@
   inset: 0;
   padding: 2px;
   border-radius: inherit;
-  background: linear-gradient(to right, #FFFFFF, #BDBDBD);
+  background: linear-gradient(to right, #F2A900, #D99000);
   -webkit-mask: 
     linear-gradient(#fff 0 0) content-box, 
     linear-gradient(#fff 0 0);

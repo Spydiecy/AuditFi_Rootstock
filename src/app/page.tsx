@@ -181,12 +181,12 @@ export default function Home() {
               </p>
               <div className="flex gap-4">
                 <Link href="/audit">
-                  <button className="hover-gradient-effect px-6 py-3 bg-dark-100 hover:bg-dark-200 text-white font-bold rounded-lg transition-all duration-200 flex items-center gap-2">
+                  <button className="hover-gradient-effect px-6 py-3 bg-dark-100 hover:bg-dark-200 text-[#F2A900] font-bold rounded-lg transition-all duration-200 flex items-center gap-2 border border-[#F2A900]/30">
                     Start Audit <ArrowRight weight="bold" />
                   </button>
                 </Link>
                 <Link href="/reports">
-                  <button className="hover-gradient-effect px-6 py-3 bg-gray-800 hover:bg-gray-700 text-white rounded-lg transition-all duration-200">
+                  <button className="hover-gradient-effect px-6 py-3 bg-gray-800 hover:bg-gray-700 text-[#F2A900] rounded-lg transition-all duration-200 border border-[#F2A900]/20">
                     View Reports
                   </button>
                 </Link>

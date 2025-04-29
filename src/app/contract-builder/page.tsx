@@ -562,7 +562,7 @@ export default function ContractBuilder() {
                 {!walletConnected ? (
                   <button
                     onClick={handleConnectWallet}
-                    className="w-full py-3 px-4 rounded-lg font-bold flex items-center justify-center gap-2 bg-dark-100 hover:bg-dark-200 text-white transition-colors duration-200 shadow-lg shadow-white/20"
+                    className="w-full py-3 px-4 rounded-lg font-bold flex items-center justify-center gap-2 bg-dark-100 hover:bg-dark-200 text-[#F2A900] transition-colors duration-200 shadow-lg border border-[#F2A900]/30"
                   >
                     <Lightning size={20} weight="fill" />
                     Connect Wallet to Deploy
@@ -571,9 +571,9 @@ export default function ContractBuilder() {
                   <div className="space-y-4">
                     {/* Network information */}
                     {currentChain ? (
-                      <div className="text-sm flex items-center gap-2 bg-white/10 border border-white/20 rounded-lg px-3 py-2">
+                      <div className="text-sm flex items-center gap-2 bg-[#F2A900]/10 border border-[#F2A900]/20 rounded-lg px-3 py-2">
                         <span>Network:</span>
-                        <span className="text-white font-mono flex items-center gap-1">
+                        <span className="text-[#F2A900] font-mono flex items-center gap-1">
                           <img 
                             src={CHAIN_CONFIG[currentChain].iconPath}
                             alt={CHAIN_CONFIG[currentChain].chainName}
@@ -594,7 +594,7 @@ export default function ContractBuilder() {
                       className={`w-full py-3 px-4 rounded-lg font-bold flex items-center justify-center gap-2 transition-all duration-200
                         ${isDeploying || !currentChain || currentChain !== 'rootstockTestnet'
                           ? 'bg-gray-800 text-gray-400 cursor-not-allowed'
-                          : 'bg-dark-100 hover:bg-dark-200 text-white shadow-lg shadow-white/20'
+                          : 'bg-dark-100 hover:bg-dark-200 text-[#F2A900] shadow-lg border border-[#F2A900]/30'
                         }`}
                     >
                       {isDeploying ? (

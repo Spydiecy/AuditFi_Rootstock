@@ -43,7 +43,7 @@ export const ConnectButton = () => {
       {isConnected && address ? (
         <button
           onClick={() => disconnect()}
-          className="px-4 py-2 bg-dark-100 hover:bg-dark-200 text-white font-bold rounded-lg transition-all duration-200 shadow-md flex items-center gap-2"
+          className="px-4 py-2 bg-dark-100 hover:bg-dark-200 text-[#F2A900] font-bold rounded-lg transition-all duration-200 shadow-md flex items-center gap-2 border border-[#F2A900]/30"
         >
           <SignOut weight="bold" className="w-4 h-4" />
           {formattedAddress}
@@ -52,7 +52,7 @@ export const ConnectButton = () => {
         <button
           disabled={isPending}
           onClick={handleConnect}
-          className="px-4 py-2 bg-dark-100 hover:bg-dark-200 text-white font-bold rounded-lg transition-all duration-200 shadow-md flex items-center gap-2"
+          className="px-4 py-2 bg-dark-100 hover:bg-dark-200 text-[#F2A900] font-bold rounded-lg transition-all duration-200 shadow-md flex items-center gap-2 border border-[#F2A900]/30"
         >
           <Image 
             src="/chains/metamask.svg" 
@@ -66,4 +66,4 @@ export const ConnectButton = () => {
       {error && <div className="text-red-500 text-sm mt-2">{error.message}</div>}
     </div>
   );
-}; 
+};

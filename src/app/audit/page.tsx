@@ -442,7 +442,7 @@ export default function AuditPage() {
               className={`mt-4 w-full py-3 px-4 rounded-lg font-bold flex items-center justify-center gap-2 transition-all duration-200 ${
                 isAnalyzing || !code || cooldown > 0
                   ? 'bg-gray-800 text-gray-400 cursor-not-allowed'
-                  : 'bg-dark-100 hover:bg-dark-200 text-white shadow-lg shadow-white/20'
+                  : 'bg-dark-100 hover:bg-dark-200 text-[#F2A900] shadow-lg border border-[#F2A900]/30'
               }`}
             >
               {isAnalyzing ? (
@@ -575,7 +575,7 @@ export default function AuditPage() {
                       <button
                         onClick={registerAuditOnChain}
                         disabled={txState.isProcessing}
-                        className="px-8 py-3 bg-dark-100 hover:bg-dark-200 text-white font-bold rounded-lg transition-all duration-200 flex items-center gap-3 mx-auto shadow-lg shadow-white/20"
+                        className="px-8 py-3 bg-dark-100 hover:bg-dark-200 text-[#F2A900] font-bold rounded-lg transition-all duration-200 flex items-center gap-3 mx-auto shadow-lg border border-[#F2A900]/30"
                       >
                         {txState.isProcessing ? (
                           <>
@@ -630,16 +630,16 @@ export default function AuditPage() {
                     Paste your Solidity code on the left panel and click 'Analyze Contract' to get a comprehensive security assessment
                   </p>
                   <div className="flex flex-wrap justify-center gap-2">
-                    <span className="text-xs px-2 py-1 rounded-full bg-white/10 text-white border border-white/20">
+                    <span className="text-xs px-2 py-1 rounded-full bg-[#F2A900]/10 text-[#F2A900] border border-[#F2A900]/20">
                       Vulnerability Detection
                     </span>
-                    <span className="text-xs px-2 py-1 rounded-full bg-white/10 text-white border border-white/20">
+                    <span className="text-xs px-2 py-1 rounded-full bg-[#F2A900]/10 text-[#F2A900] border border-[#F2A900]/20">
                       Security Scoring
                     </span>
-                    <span className="text-xs px-2 py-1 rounded-full bg-white/10 text-white border border-white/20">
+                    <span className="text-xs px-2 py-1 rounded-full bg-[#F2A900]/10 text-[#F2A900] border border-[#F2A900]/20">
                       Gas Optimization
                     </span>
-                    <span className="text-xs px-2 py-1 rounded-full bg-white/10 text-white border border-white/20">
+                    <span className="text-xs px-2 py-1 rounded-full bg-[#F2A900]/10 text-[#F2A900] border border-[#F2A900]/20">
                       On-Chain Verification
                     </span>
                   </div>

@@ -54,15 +54,15 @@ const config = getDefaultConfig({
   ssr: true, // Enable server-side rendering support
 });
 
-// Create a custom theme that matches AuditFi's UI
+// Create a custom theme that matches AuditFi's UI with Rootstock orange
 const auditFiTheme = {
   ...darkTheme(),
   colors: {
     ...darkTheme().colors,
-    accentColor: '#3b82f6', // Blue color to match your gradient
-    accentColorForeground: 'white',
+    accentColor: '#F2A900', // Rootstock orange
+    accentColorForeground: 'black',
     connectButtonBackground: '#1e293b', // Darker background
-    connectButtonText: 'white',
+    connectButtonText: '#F2A900',
   },
   radii: {
     ...darkTheme().radii,

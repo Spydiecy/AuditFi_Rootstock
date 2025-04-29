@@ -48,7 +48,7 @@ export default function WalletConnectButton() {
                 return (
                   <button
                     onClick={openConnectModal}
-                    className="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-4 py-2 rounded-lg font-medium shadow-lg hover:shadow-xl transition-all duration-200 flex items-center gap-2"
+                    className="bg-gradient-to-r from-[#F2A900] to-[#D99000] text-black px-4 py-2 rounded-lg font-medium shadow-lg hover:shadow-xl transition-all duration-200 flex items-center gap-2"
                     type="button"
                   >
                     <svg 
@@ -78,7 +78,7 @@ export default function WalletConnectButton() {
                 return (
                   <button
                     onClick={openChainModal}
-                    className="bg-red-600 text-white px-4 py-2 rounded-lg font-medium shadow-lg hover:shadow-xl transition-all duration-200 flex items-center gap-2"
+                    className="bg-red-600/80 text-white px-4 py-2 rounded-lg font-medium shadow-lg hover:shadow-xl hover:bg-red-600 transition-all duration-200 flex items-center gap-2 border border-[#F2A900]/30"
                     type="button"
                   >
                     <svg 
@@ -103,7 +103,7 @@ export default function WalletConnectButton() {
               return (
                 <button
                   onClick={openAccountModal}
-                  className="flex items-center bg-gradient-to-r from-blue-500 to-purple-600 text-white px-3 py-2 rounded-lg font-medium shadow-lg hover:shadow-xl transition-all duration-200"
+                  className="flex items-center bg-gradient-to-r from-[#F2A900] to-[#D99000] text-black px-3 py-2 rounded-lg font-medium shadow-lg hover:shadow-xl transition-all duration-200"
                   type="button"
                 >
                   <svg 
