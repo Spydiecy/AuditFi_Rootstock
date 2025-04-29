@@ -1,8 +1,36 @@
 # AuditFi 🛡️
 
+> **Submission for (A)I BUIDL Lab on Rootstock Hackathon 2025**
+> 
+> Track: DeFi and Payments  
+> AI Bounty: Best Use of AI Prompts
+
 **Next-generation smart contract security powered by Finetuned AI, delivering instant, on-chain audit reports for Rootstock Network.**
 
 ![image](https://github.com/user-attachments/assets/0ea2adad-3a31-4c22-a93c-f2cfe42f71d8)
+
+## 🚀 Hackathon Overview
+
+AuditFi is our submission to the (A)I BUIDL Lab on Rootstock hackathon, leveraging AI-driven development workflows to create a comprehensive smart contract security solution specifically designed for the Rootstock ecosystem.
+
+### ✅ Project Components:
+
+1. **Core Application**: Fully functional dApp with comprehensive Web3 integration
+2. **AI Integration**: Extensive use of AI tools throughout development (see [AI Prompts Documentation](./ai-prompts.md))
+3. **Real-world Use Case**: Addressing critical security needs for Rootstock developers
+
+### 💡 How We Used AI:
+
+Our development process relied heavily on AI assistance to accelerate and enhance:
+
+- Smart contract template generation
+- Security vulnerability pattern recognition
+- UI/UX development
+- Code quality and optimization
+- Documentation generation
+- Testing scenarios
+
+Detailed AI journey documentation is available in our [AI Prompts](./ai-prompts.md) file.
 
 ## 🌟 Features
 
@@ -116,6 +144,33 @@ Exclusively supporting Rootstock Testnet for:
 - Rootstock-focused security patterns
 
 ![image](https://github.com/user-attachments/assets/8d7a929e-4559-4ed9-a2bc-9f2abedea0c4)
+
+## 📋 Hackathon Submission Details
+
+### Project Overview
+- **Name**: AuditFi
+- **Description**: Next-generation smart contract security platform powered by Finetuned AI, delivering instant, on-chain audit reports for Rootstock Network.
+- **Track**: DeFi and Payments
+- **Bounty Category**: Best Use of AI Prompts
+
+### Repository Structure
+- `/src`: Core application code
+- `/public`: Static assets including Rootstock branding
+- `/ai-prompts.md`: Detailed documentation of our AI-assisted development process
+
+### AI Process Documentation
+Our team extensively leveraged AI tools throughout the development lifecycle:
+- **Initial Design**: Architecture planning and system design using AI assistance
+- **Smart Contract Security**: AI-powered detection of security vulnerabilities
+- **UI Development**: Component structure generation and styling recommendations
+- **Documentation**: Automated generation of code documentation
+
+See our comprehensive [AI Prompts Documentation](./ai-prompts.md) for detailed examples of how we utilized AI to accelerate development while maintaining quality.
+
+### Impact on Rootstock Ecosystem
+AuditFi addresses a critical need in the Rootstock ecosystem by providing accessible, instantaneous security analysis for smart contracts. This lowers the barrier to entry for developers while raising the security standards of deployed contracts.
+
+By focusing exclusively on Rootstock Network optimizations, AuditFi helps ensure that DeFi applications built on Bitcoin's most established sidechain maintain the highest levels of security and efficiency.
 
 ## 📬 Contact & Support
 
