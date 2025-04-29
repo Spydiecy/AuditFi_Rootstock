@@ -2,16 +2,16 @@
 
 > **Submission for (A)I BUIDL Lab on Rootstock Hackathon 2025**
 > 
-> Track: DeFi and Payments  
+> Track: Identity and Reputation in Web3 
 > AI Bounty: Best Use of AI Prompts
 
 **Next-generation smart contract security powered by Finetuned AI, delivering instant, on-chain audit reports for Rootstock Network.**
 
-![image](https://github.com/user-attachments/assets/0ea2adad-3a31-4c22-a93c-f2cfe42f71d8)
+![image](https://github.com/user-attachments/assets/b634cf2e-df66-48c6-82b4-4b4ad9c29627)
 
 ## 🚀 Hackathon Overview
 
-AuditFi is our submission to the (A)I BUIDL Lab on Rootstock hackathon, leveraging AI-driven development workflows to create a comprehensive smart contract security solution specifically designed for the Rootstock ecosystem.
+AuditFi is our submission to the (A)I BUIDL Lab on Rootstock hackathon, leveraging AI-driven development workflows to create a comprehensive smart contract security solution specifically designed for the Rootstock ecosystem. *It directly addresses a critical trust gap in Web3 by creating a decentralized reputation system for smart contract security.*
 
 ### ✅ Project Components:
 
@@ -44,7 +44,7 @@ Detailed AI journey documentation is available in our [AI Prompts](./ai-prompts.
   - Specialized gas optimization for Rootstock environment
   - Instant verification on Rootstock Explorer
   
-  ![image](https://github.com/user-attachments/assets/127d5dab-3395-4fa9-9ca5-c6dddcd0b3d8)
+  ![image](https://github.com/user-attachments/assets/cbfb9146-c9b7-4a2a-972f-60e5b3d0781d)
 
 - **Self-Contained Smart Contract Templates**
   - Dependency-free ERC20 implementation
@@ -52,7 +52,7 @@ Detailed AI journey documentation is available in our [AI Prompts](./ai-prompts.
   - AI-assisted contract generation with custom specifications
   - Robust security features built into every template
   - Rootstock Network gas optimizations
-  - ![image](https://github.com/user-attachments/assets/2188c03d-e7fc-4315-8dea-3b630fe65bd0)
+  - ![image](https://github.com/user-attachments/assets/9c268dcf-ac02-4ef2-be2e-6d722019d24d)
 
 - **Secure Contract Building**
   - Zero-dependency contract architecture
@@ -60,14 +60,15 @@ Detailed AI journey documentation is available in our [AI Prompts](./ai-prompts.
   - Comprehensive event emissions for full transparency
   - Robust access control and integrity checks
   - Rootstock-specific optimizations for improved performance
+  - ![image](https://github.com/user-attachments/assets/5cc8ae73-9928-4ee9-b46d-7d2cd8faa2d1)
 
 - **On-Chain Verification System**  
   - All audit reports permanently stored on Rootstock Network
   - Immutable audit history for complete traceability
   - Direct explorer integration for transparency
   - Verifiable security scores
-  - ![image](https://github.com/user-attachments/assets/69735782-35f8-4a18-9706-22ada9a5f599)
-  - ![image](https://github.com/user-attachments/assets/f651f308-a028-48e4-b687-67579eb8186f)
+  - ![image](https://github.com/user-attachments/assets/bcbc13da-9358-40f5-af63-d0d852a97891)
+  - ![image](https://github.com/user-attachments/assets/da384c50-6bf1-4b2d-84d7-79ee0877b9c4)
 
 - **Interactive Development Experience**
   - Real-time code generation and validation
@@ -129,9 +130,9 @@ Visit [AuditFi](https://auditfi-rootstock.netlify.app/) to try it out on Rootsto
   - Automatically generated smart contract documentation
   - AI-powered test case creation for multiple frameworks
 
-![image](https://github.com/user-attachments/assets/cd1549ce-4e06-4a51-b20f-c56bf0af32aa)
+![image](https://github.com/user-attachments/assets/5e35b6a4-9b45-4159-be80-031b498710ee)
 
-![image](https://github.com/user-attachments/assets/275f8c22-64eb-4776-a6ad-f537ca3b4e03)
+![image](https://github.com/user-attachments/assets/f345d98b-d275-4e77-928d-3a0f585edd46)
 
 ## 🔗 Network Support
 
@@ -143,7 +144,7 @@ Exclusively supporting Rootstock Testnet for:
 - Network-specific gas optimization
 - Rootstock-focused security patterns
 
-![image](https://github.com/user-attachments/assets/8d7a929e-4559-4ed9-a2bc-9f2abedea0c4)
+![image](https://github.com/user-attachments/assets/d54ea9dd-fdbe-4430-ab4d-1de7f5388518)
 
 ## 📋 Hackathon Submission Details
 
@@ -174,6 +175,7 @@ By focusing exclusively on Rootstock Network optimizations, AuditFi helps ensure
 
 ## 📬 Contact & Support
 
+- Email Support here [Contact](mailto:tanishqgupta322@gmail.com)
 - Follow AuditFi updates on [Twitter](https://x.com/AuditFi_ai)
 
 ## 📄 License
