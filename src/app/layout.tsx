@@ -26,13 +26,13 @@ function MainLayout({ children }: RootLayoutProps) {
   
   // Find current chain key based on chain id
   const getCurrentChainKey = (): ChainKey => {
-    if (!chainId) return 'seiTestnet';
+    if (!chainId) return 'rootstockTestnet';
     
     const networkEntry = Object.entries(CHAIN_CONFIG).find(
       ([, config]) => config.chainId.toLowerCase() === '0x' + chainId.toString(16).toLowerCase()
     );
     
-    return networkEntry ? networkEntry[0] as ChainKey : 'seiTestnet';
+    return networkEntry ? networkEntry[0] as ChainKey : 'rootstockTestnet';
   };
   
   const currentChain = getCurrentChainKey();

@@ -18,29 +18,17 @@ interface ChainConfig {
 }
 
 export const CHAIN_CONFIG: Record<string, ChainConfig> = {
-  seiTestnet: {
-    chainId: '0x530', // 1328 in hex
-    chainName: 'Sei Testnet',
+  rootstockTestnet: {
+    chainId: '0x1f', // 31 in hex
+    chainName: 'Rootstock Testnet',
     nativeCurrency: {
-      name: 'Sei',
-      symbol: 'SEI',
+      name: 'Rootstock Bitcoin',
+      symbol: 'tRBTC',
       decimals: 18
     },
-    rpcUrls: ['https://evm-rpc-testnet.sei-apis.com'],
-    blockExplorerUrls: ['https://testnet.seistream.app'],
-    iconPath: '/chains/sei.png'
-  },
-  seiMainnet: {
-    chainId: '0x531', // 1329 in hex
-    chainName: 'Sei Mainnet',
-    nativeCurrency: {
-      name: 'Sei',
-      symbol: 'SEI',
-      decimals: 18
-    },
-    rpcUrls: ['https://evm-rpc.sei-apis.com'],
-    blockExplorerUrls: ['https://seistream.app'],
-    iconPath: '/chains/sei.png'
+    rpcUrls: ['https://public-node.testnet.rsk.co'],
+    blockExplorerUrls: ['https://explorer.testnet.rootstock.io'],
+    iconPath: '/chains/rootstock.png'
   }
 } as const;
 

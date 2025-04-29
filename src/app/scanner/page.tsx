@@ -142,7 +142,7 @@ export default function ScannerPage() {
         "Add proper input validation for all parameters",
         "Use SafeMath for arithmetic operations",
         "Add events for all state-changing operations",
-        "Follow Sei Network gas optimization best practices"
+        "Follow Rootstock Network's gas optimization best practices"
       ]
     };
     

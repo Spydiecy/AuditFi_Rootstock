@@ -48,27 +48,20 @@ export default function ReportsPage() {
     minStars: 0
   });
 
-  const getSeiExplorerLink = (report: AuditReport): string => {
+  const getExplorerLink = (report: AuditReport): string => {
     // If no transaction hash, return empty string or placeholder URL
     if (!report.transactionHash) {
       return '#'; // Return non-navigable link
     }
 
-    // Handle specific explorer URL format for Sei Network
-    if (report.chain === 'seiMainnet') {
+    // Handle Rootstock explorer URL format
+    if (report.chain === 'rootstockTestnet') {
       // Ensure transaction hash has correct format
       const formattedHash = report.transactionHash.startsWith('0x') 
         ? report.transactionHash 
         : `0x${report.transactionHash}`;
       
-      console.log(`Building Sei explorer URL for: ${formattedHash}`);
-      return `https://seistream.app/tx/${formattedHash}`;
-    } else if (report.chain === 'seiTestnet') {
-      const formattedHash = report.transactionHash.startsWith('0x') 
-        ? report.transactionHash 
-        : `0x${report.transactionHash}`;
-      
-      return `https://testnet.seistream.app/tx/${formattedHash}`;
+      return `https://explorer.testnet.rootstock.io/tx/${formattedHash}`;
     }
     
     // Default explorer URL format for other chains
@@ -532,7 +525,7 @@ export default function ReportsPage() {
                     </button>
                     {selectedReport.transactionHash && selectedReport.transactionHash.length > 20 && !selectedReport.transactionHash.includes('-') && (
                       <a
-                        href={getSeiExplorerLink(selectedReport)}
+                        href={getExplorerLink(selectedReport)}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="px-4 py-2 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors duration-200 flex items-center gap-2"

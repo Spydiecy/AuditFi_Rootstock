@@ -183,7 +183,7 @@ export default function ProfilePage() {
                 <User size={16} className="text-white" weight="bold" />
                 <span className="font-mono">{address}</span>
                 <a
-                  href={`https://seistream.app/account/${address}`}
+                  href={`https://explorer.testnet.rootstock.io/address/${address}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-white hover:text-gray-300 transition-colors"

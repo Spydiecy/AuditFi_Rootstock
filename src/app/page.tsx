@@ -23,19 +23,19 @@ import {
 import Image from 'next/image';
 import Link from 'next/link';
 
-// Simplified chain config to only include Sei testnet
+// Simplified chain config to only include Rootstock testnet
 const CHAIN_CONFIG = {
-  seiTestnet: {
-    chainId: '0x530', // 1328 in hex
-    chainName: 'Sei testnet',
+  rootstockTestnet: {
+    chainId: '0x1f', // 31 in hex
+    chainName: 'Rootstock Testnet',
     nativeCurrency: {
-      name: 'Sei',
-      symbol: 'SEI',
+      name: 'Rootstock Bitcoin',
+      symbol: 'tRBTC',
       decimals: 18
     },
-    rpcUrls: ['https://evm-rpc-testnet.sei-apis.com'],
-    blockExplorerUrls: ['https://seitrace.com'],
-    iconPath: '/chains/sei.png'
+    rpcUrls: ['https://public-node.testnet.rsk.co'],
+    blockExplorerUrls: ['https://explorer.testnet.rootstock.io'],
+    iconPath: '/chains/rootstock.png'
   }
 };
 
@@ -57,7 +57,7 @@ const features = [
   {
     icon: Lightning,
     title: 'Multi-Chain Support',
-    description: 'Audit smart contracts on Sei testnet'
+    description: 'Audit smart contracts on Rootstock Testnet'
   },
   {
     icon: Code,
@@ -67,7 +67,7 @@ const features = [
   {
     icon: FileText,
     title: 'Documentation Generation',
-    description: 'Gemini powered documentation for Solidity contracts'
+    description: 'Ai powered documentation for Solidity contracts'
   },
   {
     icon: TestTube,
@@ -83,7 +83,7 @@ const recentAudits: Audit[] = [
     summary: 'No critical vulnerabilities found. Code follows best practices.',
     auditor: '0xABc...123',
     timestamp: 1703116800,
-    chain: 'seiTestnet'
+    chain: 'rootstockTestnet'
   },
   {
     contractHash: '0x456...def',
@@ -91,7 +91,7 @@ const recentAudits: Audit[] = [
     summary: 'Minor optimizations suggested. Overall secure implementation.',
     auditor: '0xDEf...456',
     timestamp: 1703030400,
-    chain: 'seiTestnet'
+    chain: 'rootstockTestnet'
   },
   {
     contractHash: '0x789...ghi',
@@ -99,7 +99,7 @@ const recentAudits: Audit[] = [
     summary: 'Excellent implementation with robust security measures.',
     auditor: '0xGHi...789',
     timestamp: 1702944000,
-    chain: 'seiTestnet'
+    chain: 'rootstockTestnet'
   }
 ];
 
@@ -177,7 +177,7 @@ export default function Home() {
                 <span className="text-white">SECURITY</span>
               </h1>
               <p className="text-gray-400 text-lg mb-8 max-w-xl">
-                Secure your smart contracts with AI-powered analysis, documentation, and on-chain verification. Get instant security audits powered by Finetuned AI, now optimized for Sei Network.
+                Secure your smart contracts with AI-powered analysis, documentation, and on-chain verification. Get instant security audits powered by Finetuned AI, now optimized for Rootstock.
               </p>
               <div className="flex gap-4">
                 <Link href="/audit">
@@ -317,10 +317,10 @@ export default function Home() {
               <span className="text-white text-sm font-semibold">Network Support</span>
             </div>
             <h2 className="text-4xl font-bold font-mono mb-4">
-              <span className="text-white">Sei</span> Network Integration
+              <span className="text-white">Rootstock</span> Network Integration
             </h2>
             <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-              Optimized for the Sei Network ecosystem with native support for SEI tokens
+              Optimized for the Rootstock Network ecosystem with native support for tRBTC tokens
             </p>
           </motion.div>
 
@@ -332,22 +332,22 @@ export default function Home() {
               <div className="relative">
                 <div className="absolute inset-0 bg-white/20 rounded-full filter blur-md"></div>
                 <Image
-                  src="/chains/sei.png"
-                  alt="Sei Network"
+                  src="/chains/rootstock.png"
+                  alt="Rootstock Network"
                   width={60}
                   height={60}
                   className="rounded-full relative z-10 ring-2 ring-white/50 p-1"
                 />
               </div>
               <div>
-                <h3 className="font-semibold text-xl mb-1">Sei Testnet</h3>
-                <p className="text-gray-400">Native Token: <span className="text-white font-semibold">SEI</span></p>
+                <h3 className="font-semibold text-xl mb-1">Rootstock Testnet</h3>
+                <p className="text-gray-400">Native Token: <span className="text-white font-semibold">tRBTC</span></p>
                 <div className="flex flex-wrap gap-2 mt-2">
-                  <a href="https://sepolia.seitrace.com" target="_blank" rel="noopener noreferrer" className="text-sm text-white hover:text-gray-300 flex items-center space-x-1">
+                  <a href="https://explorer.testnet.rootstock.io" target="_blank" rel="noopener noreferrer" className="text-sm text-white hover:text-gray-300 flex items-center space-x-1">
                     <span>Block Explorer</span>
                     <ArrowRight size={14} weight="bold" />
                   </a>
-                  <a href="https://docs.sei.io" target="_blank" rel="noopener noreferrer" className="text-sm text-white hover:text-gray-300 flex items-center space-x-1">
+                  <a href="https://developers.rsk.co" target="_blank" rel="noopener noreferrer" className="text-sm text-white hover:text-gray-300 flex items-center space-x-1">
                     <span>Developer Docs</span>
                     <ArrowRight size={14} weight="bold" />
                   </a>
@@ -553,7 +553,7 @@ export default function Home() {
               <h3 className="font-semibold mb-4">Resources</h3>
               <ul className="space-y-2">
                 <li>
-                  <a href="https://docs.sei.io" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
+                  <a href="https://developers.rsk.co" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
                     Documentation
                   </a>
                 </li>

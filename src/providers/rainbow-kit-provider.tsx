@@ -18,44 +18,26 @@ import {
 import { WagmiProvider, http } from 'wagmi';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 
-// Define Sei Testnet chain
-const seiTestnet = {
-  id: 1328,
-  name: 'Sei Testnet',
+// Define Rootstock Testnet chain
+const rootstockTestnet = {
+  id: 31,
+  name: 'Rootstock Testnet',
   nativeCurrency: {
     decimals: 18,
-    name: 'Sei',
-    symbol: 'SEI',
+    name: 'Rootstock Bitcoin',
+    symbol: 'tRBTC',
   },
   rpcUrls: {
-    default: { http: ['https://evm-rpc-testnet.sei-apis.com'] },
+    default: { http: ['https://public-node.testnet.rsk.co'] },
   },
   blockExplorers: {
-    default: { name: 'Sei Stream', url: 'https://testnet.seistream.app/' },
+    default: { name: 'RSK Explorer', url: 'https://explorer.testnet.rootstock.io' },
   },
   testnet: true,
 };
 
-// Define Sei Mainnet chain
-const seiMainnet = {
-  id: 1329,
-  name: 'Sei Mainnet',
-  nativeCurrency: {
-    decimals: 18,
-    name: 'Sei',
-    symbol: 'SEI',
-  },
-  rpcUrls: {
-    default: { http: ['https://evm-rpc.sei-apis.com'] },
-  },
-  blockExplorers: {
-    default: { name: 'Sei Stream', url: 'https://seistream.app' },
-  },
-  testnet: false,
-};
-
-// Contract address on Sei mainnet
-const CONTRACT_ADDRESS_MAINNET = '0xCa36dD890F987EDcE1D6D7C74Fb9df627c216BF6';
+// Contract address on Rootstock Testnet
+const CONTRACT_ADDRESS_MAINNET = '0xF887B4D3b17C12C86cc917cF72fb8881f866a847';
 
 // Project ID for WalletConnect
 // For demo purposes we're using a hardcoded ID, but in production you should use an environment variable
@@ -65,10 +47,9 @@ const projectId = 'b8ad206ba9492e6096fa0aa0f868586c';
 const config = getDefaultConfig({
   appName: 'AuditFi',
   projectId,
-  chains: [seiTestnet, seiMainnet], // Include both Sei Testnet and Mainnet
+  chains: [rootstockTestnet], // Include Rootstock Testnet
   transports: {
-    [seiTestnet.id]: http(),
-    [seiMainnet.id]: http(),
+    [rootstockTestnet.id]: http(),
   },
   ssr: true, // Enable server-side rendering support
 });
@@ -119,9 +100,9 @@ export function RainbowKitProviderWrapper({ children }: { children: React.ReactN
           modalSize="compact"
           appInfo={{
             appName: 'AuditFi',
-            learnMoreUrl: 'https://seitrace.com',
+            learnMoreUrl: 'https://developers.rsk.co',
           }}
-          initialChain={seiTestnet.id} // Always start on Sei Testnet
+          initialChain={rootstockTestnet.id} // Always start on Rootstock Testnet
         >
           {children}
         </RainbowKitProvider>
